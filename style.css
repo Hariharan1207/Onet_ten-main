@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: url('./Ben10/Backdrop.jpeg');
+}
+
+td {
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px #888888;
+}
+
+td.active {
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+td.hide {
+    background-color: transparent;
+    color: transparent;
+    box-shadow: 0 0 transparent;
+}
+#game-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#game-overlay-canvas {
+    position: absolute;
+    pointer-events: none;
+}
+
+#game-section-wrapper {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game-level, #new-game-button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 16px auto;
+    padding:12px;
+    display: inline;
+}
+
+#new-game-button {
+    width: 100%;
+    display: none
+}
+
+#easy {
+    background-color: greenyellow
+}
+
+#medium {
+    background-color: yellow
+}
+
+#hard {
+    background-color: red
+}
